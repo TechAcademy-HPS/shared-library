@@ -7,6 +7,5 @@ def playbook_execution(String pathOfKey, String playbook){
 }
 
 def ansible_deploy_playbook(String inventory, String playbook){
-  sh "su ansible1"
-  sh "ansible-playbook -i ${inventory} ${playbook}"
+  sh "ansible-playbook -i ${inventory} ${playbook} --user ansible1"
 }
