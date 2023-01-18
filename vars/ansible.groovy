@@ -7,5 +7,5 @@ def playbook_execution(String pathOfKey, String playbook){
 }
 
 def ansible_deploy_playbook(String inventory, String playbook){
-   sh "ansiblePlaybook credentialsId: 'tomcat credentials', disableHostKeyChecking: true, installation: 'ansible', inventory: ${inventory}, playbook: ${playbook}"
+   sh 'ansiblePlaybook credentialsId: 'tomcat credentials', disableHostKeyChecking: true, installation: 'ansible', inventory: ${inventory}, playbook: ${playbook}'
 }
