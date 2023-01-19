@@ -8,5 +8,5 @@ def playbook_execution(String pathOfKey, String playbook){
 
 def ansible_deploy_playbook(String inventory, String playbook){
   sh "ansible all -m ping"
-  sh "ansible-playbook -i ${inventory} ${playbook} --user ansible1"
+  sh "ansible-playbook -i ${inventory} ${playbook}"
 }
